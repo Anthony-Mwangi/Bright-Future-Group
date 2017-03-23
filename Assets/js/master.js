@@ -21,6 +21,18 @@ $(document).ready(function() {
     $link.slideToggle();
   });
 
+
+  $(".tab_link").click(function () {
+    var $this = $(this);
+    var link = $this.attr("target");
+    if (link === "division1.html") {
+      window.location = "divisions.html";
+    }else {
+      window.location = link;
+    }
+  });
+
+
   $("#ham_main").click(function () {
     var $lnk = $(".links_main");
     $lnk.slideToggle();
